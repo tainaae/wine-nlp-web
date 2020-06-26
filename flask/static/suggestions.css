@@ -1,0 +1,100 @@
+    /* Below line is used for online Google font */
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+div.container{
+        width: 900px;
+        height: 210px;
+        margin:10px auto;
+        font-family: 'Droid Serif', serif;
+    }
+div.main{
+    width: 388px;
+    margin-top: 10px auto;
+    float: left;
+    border-radius: 5px;
+    Border:2px solid #49006a;
+    padding:0px 30px 15px;
+}
+p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color:green;
+    font-weight: bold;
+}
+h2{
+    background-color: rgba(72, 61, 139, 0.7);
+    padding: 27px;
+    margin: 0 -50px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+hr{
+    margin: 0 -50px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom:25px;
+}
+span{
+    font-size:13.5px;
+}
+label{
+    color: #464646;
+    text-shadow: 0 1px 0 rgba(247, 104, 161, 0.25);
+    font-size: 12px;
+    font-weight: bold;
+}
+.heading{
+font-size: 17px;
+}
+b{
+    color:red;
+}
+input[type=checkbox]{
+    margin-bottom:7px;
+    margin-right: 7px;
+}
+.button {
+  background-color: rgba(72, 61, 139, 0.9); /*  */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#mapid {
+    height: 100vh;
+    width: 110vh;
+    margin-top:10px;
+    float: center;
+    border-radius: 5px;
+    Border:2px solid #49006a;
+    padding:0px 50px 20px;  
+}
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+
+.legend {
+    line-height: 18px;
+    color: #555;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}

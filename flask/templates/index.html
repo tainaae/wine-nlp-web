@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <script src="/static/countries/argentina.js"></script>
+        <script src="/static/countries/australia.js"></script>
+        <script src="/static/countries/canada.js"></script>
+        <script src="/static/countries/chile.js"></script>
+        <script src="/static/countries/france.js"></script>
+        <script src="/static/countries/greece.js"></script>
+        <script src="/static/countries/italy.js"></script>
+        <script src="/static/countries/portugal.js"></script>
+        <script src="/static/countries/southafrica.js"></script>
+        <script src="/static/countries/spain.js"></script>
+        <script src="/static/countries/uruguay.js"></script>
+        <script src="/static/countries/us.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!--- inclusao de arquivo de estilo e do arquivo que contem jquery, referente a entrada do usuáro--->
+        <link rel="stylesheet" href="/static/suggestions.css"/>
+        <script src="/static/suggestions.js"></script>
+        <!--- leaflet --->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+	   <meta charset="UTF-8"> 
+    </head>
+    <body>        
+        <divclass="container">
+            <div class="main">
+                <h2> Selecione as características desejadas:</h2>
+                <form>
+                    <center>
+                    <col><label class="heading">Coloração</label><br>
+                            <input type="checkbox" name="color" value="red"><label>Tinto</label><br>
+                            <input type="checkbox" name="color" value="white"><label>Branco</label><br>
+                            <input type="checkbox" name="color" value="rose"><label>Rosé</label><br>
+                        <label class="heading">Nível de açúcar</label><br>
+                            <input type="checkbox" name="sugar" value="sweet"><label>Suave</label><br>
+                            <input type="checkbox" name="sugar" value="dry"><label>Seco</label><br>
+                        <label class="heading">Teor alcoólico</label><br>
+                            <input type="checkbox" name="alcohol" value="light"><label>Leve</label><br>
+                            <input type="checkbox" name="alcohol" value="medium"><label>Médio</label><br>
+                            <input type="checkbox" name="alcohol" value="high"><label>Alto</label><br>
+                        <label class="heading">Aromas e Sabores</label><br>
+                            <input type="checkbox" name="main" value="acid"><label>Acidez</label><br>
+                            <input type="checkbox" name="main" value="tannin"><label>Taninos</label><br>
+                            <input type="checkbox" name="main" value="mineral"><label>Minerais</label><br>
+                            <input type="checkbox" name="main" value="fruit"><label>Aromas de frutas</label><br>
+                        <label class="heading">Notas de frutas</label><br>
+                            <input type="checkbox" name="fruits" value="dark"><label>Frutas vermelhas e negras</label><br>
+                            <input type="checkbox" name="fruits" value="yellow"><label>Outras</label><br>
+                        <label class="heading">Potencial de Guarda</label><br>
+                            <input type="checkbox" name="age" value="young"><label>Jovem</label><br>
+                            <input type="checkbox" name="age" value="old"><label>Longevo</label><br>
+                        <label class="heading">Corpo</label><br>
+                            <input type="checkbox" name="body" value="simple"><label>Leve</label><br>
+                            <input type="checkbox" name="body" value="intermediary"><label>Médio</label><br>
+                            <input type="checkbox" name="body" value="complex"><label>Encorpado</label><br>
+                        </col>
+                        <button id="submit" type="button" class="button" >Enviar</button>
+                    </center>
+                </form>
+            </div>
+        </divclass>
+        <div id="mapid"></div>
+        <script src="/static/leaflet.js"></script>
+    </body>
+</html>
+
+
