@@ -1,4 +1,7 @@
 # coding: utf-8
+# utilizando análises feitas por @kitakoj (https://github.com/kitakoj18/wine_descp) and @zackthoutt (https://github.com/zackthoutt/wine-deep-learning) 
+
+
 
 from sqlalchemy import create_engine
 #NPL 
@@ -21,8 +24,8 @@ import numpy as np
 #dados da tabela variety_df do banco de dados mysql para dataframe
 ######################################################
 host='127.0.0.1' 
-user='pfg2' 
-password='Pfg2mysql*'
+user='****' 
+password='********'
 db='wine'
 
 engine = create_engine('mysql+pymysql://' + user + ':' + password + '@' + host + '/' + db)
@@ -130,7 +133,7 @@ clusters_df['cluster'], clusters_df['variety'], clusters_df['country'] = cluster
 clusters_df = clusters_df.drop(columns='column')
 clusters_df = clusters_df.rename(columns={0: 'points'})
 
-#Transpose index and columns
+#Transpoe indexes and columns
 info_clusters = info_clusters.T
 #transforma as palavras relacionadas a cada cluster em dicionario para comparar com a entrada dos usuários
 clusters_dictionary = info_clusters.to_dict(orient = 'list')
